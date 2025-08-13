@@ -11,7 +11,7 @@ $ add your command here
 
 |          |      Function                                            |  Remark                   |
 |:--------:|:---------------------------------------------------------|:--------------------------|
-|          | int execl (const char *path, const char *arg, ...)       | ...                       |
+|          | int execl (const char *path, const char *arg, ...)       | Execute PATH with all arguments after PATH until a NULL pointer and environment from `environ'. |
 |   List   | int execlp (const char *file, const char *arg, ...)      | ...                       |
 |          | int execle (const char *path, const char *arg, ...)      | ...                       |
 
@@ -22,4 +22,3 @@ $ add your command here
 |          | int execv (const char *path, char *const argv[])         | ...                       |
 |  Vector  | int execvp (const char *file, char *const argv[])        | ...                       |
 |          | int execve (const char *path, char *const argv[], char *const __envp[])  | ...                       |
-|:--------:|:---------------------------------------------------------|:--------------------------|
