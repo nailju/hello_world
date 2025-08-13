@@ -12,6 +12,8 @@ $ add your command here
 |          | int execl (const char *__path, const char *__arg, ...)   | ...                       |
 |   List   | int execlp (const char *__file, const char *__arg, ...)  | ...                       |
 |          | int execle (const char *__path, const char *__arg, ...)  | ...                       |
+
+|          |      Function                                            |  Remark                   |
 |:--------:|:---------------------------------------------------------|:--------------------------|
 |          | int execl (const char *__path, const char *__arg, ...)   | ...                       |
 |  Vector  | int execlp (const char *__file, const char *__arg, ...)  | ...                       |
