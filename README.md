@@ -8,9 +8,24 @@ $ add your command here
 ```
 
 # fork() functions
-
+```
+#include <unistd.h>
+pid_t fork(void);
+```
 
 # exec() functions
+```
+#include <unistd.h>
+
+extern char **environ;
+
+int execl(const char *path, const char *arg, ...);
+int execlp(const char *file, const char *arg, ...);
+int execle(const char *path, const char *arg, ..., char * const envp[]);
+int execv(const char *path, char *const argv[]);
+int execvp(const char *file, char *const argv[]);
+int execvpe(const char *file, char *const argv[], char *const envp[]);
+```
 The `exec()` family of functions (i.e., `execl()`, `execlp`, `execle()`) replaces the current process image with a new process image.
 The first argument, by convention, should point to the filename associated with the file being executed.
 The list of arguments must be terminated by a NULL pointer, and, since these are variadic functions, this pointer must be `cast (char *) NULL`.
