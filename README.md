@@ -7,15 +7,17 @@ zTo make a text box showing some commandlines, please use the following format.
 $ add your command here
 ```
 
+* List type functions
 |          |      Function                                            |  Remark                   |
 |:--------:|:---------------------------------------------------------|:--------------------------|
-|          | int execl (const char *__path, const char *__arg, ...)   | ...                       |
-|   List   | int execlp (const char *__file, const char *__arg, ...)  | ...                       |
-|          | int execle (const char *__path, const char *__arg, ...)  | ...                       |
+|          | int execl (const char *path, const char *arg, ...)       | ...                       |
+|   List   | int execlp (const char *file, const char *arg, ...)      | ...                       |
+|          | int execle (const char *path, const char *arg, ...)      | ...                       |
 
+* vector type functions
 |          |      Function                                            |  Remark                   |
 |:--------:|:---------------------------------------------------------|:--------------------------|
-|          | int execl (const char *__path, const char *__arg, ...)   | ...                       |
-|  Vector  | int execlp (const char *__file, const char *__arg, ...)  | ...                       |
-|          | int execle (const char *__path, const char *__arg, ...)  | ...                       |
+|          | int execv (const char *path, char *const argv[])         | ...                       |
+|  Vector  | int execvp (const char *file, char *const argv[])        | ...                       |
+|          | int execve (const char *path, char *const argv[], char *const __envp[])  | ...                       |
 |:--------:|:---------------------------------------------------------|:--------------------------|
