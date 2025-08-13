@@ -13,7 +13,7 @@ $ add your command here
 |          |      Function                                            |  Remark                   |
 |:--------:|:---------------------------------------------------------|:--------------------------|
 |          | int execl (const char *path, const char *arg, ...)       | Execute PATH with all arguments after PATH until a NULL pointer and environment from `environ'. |
-|   List   | int execlp (const char *file, const char *arg, ...)      | Execute FILE, searching in the `PATH' environment variable if it contains no slashes, with all arguments after FILE until a NULL pointer and environment from `environ'. |
+|   List   | int execlp (const char *file, const char *arg, ...)      | Execute FILE, searching in the PATH environment variable if it contains no slashes, with all arguments after FILE until a NULL pointer and environment from `environ'. |
 |          | int execle (const char *path, const char *arg, ...)      | ...                       |
 
 * vector type functions
