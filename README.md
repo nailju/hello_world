@@ -18,16 +18,16 @@ The `const char *arg` and subsequent ellipses in the `execl()`, `execlp()`, and 
 
 * List type functions
 
-|      Function ( #include <unistd.h> )                                    |  Example                               |
-|:-------------------------------------------------------------------------|:---------------------------------------|
-| int execl (const char *path, const char *arg, ...)                       | `execl("/bin/ls", "ls", "-al", NULL);` |
-| int execlp (const char *file, const char *arg, ...)                      | `execl("ls", "ls", "-al", NULL);`      |
-| int execle (const char *path, const char *arg, ..., char * const envp[]) | `execl("/bin/ls", "ls", "-al", NULL, );` |
+|      Function ( #include <unistd.h> )                                    |  Example                                   |
+|:-------------------------------------------------------------------------|:-------------------------------------------|
+| int execl(const char *path, const char *arg, ...)                        | `execl("/bin/ls", "ls", "-al", NULL);`     |
+| int execlp(const char *file, const char *arg, ...)                       | `execlp("ls", "ls", "-al", NULL);`         |
+| int execle(const char *path, const char *arg, ..., char *const envp[])   |   |
 
 * Vector type functions
 
-|      Function ( #include <unistd.h> )                    |  Remark                   |
-|:---------------------------------------------------------|:--------------------------|
-| int execv (const char *path, char *const argv[])         | ...                       |
-| int execvp (const char *file, char *const argv[])        | ...                       |
-| int execve (const char *path, char *const argv[], char *const __envp[])  | ...                       |
+|      Function ( #include <unistd.h> )                                    |  Example                                   |
+|:-------------------------------------------------------------------------|:-------------------------------------------|
+| int execv(const char *path, char *const argv[])                          | `char *argv_exec[] = {"ls", "-al", NULL};` `execv("/binl/ls", argv_exec);` |
+| int execvp(const char *file, char *const argv[])                         | `char *argv_exec[] = {"ls", "-al", NULL};` `execvp("ls", argv_exec);` |
+| int execve(const char *path, char *const argv[], char *const envp[])     |   |
