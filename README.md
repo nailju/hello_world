@@ -11,7 +11,7 @@ $ add your command here
 
 
 # exec() functions
-The exec() family of functions (i.e., execl(), execlp, execle()) replaces the current process image with a new process image.
+The `exec()` family of functions (i.e., execl(), execlp, execle()) replaces the current process image with a new process image.
 The first argument, by convention, should point to the filename associated with the file being executed.
 The list of arguments must be terminated by a NULL pointer, and, since these are variadic functions, this pointer must be cast (char *) NULL.
 The const char *arg and subsequent ellipses in the execl(), execlp(), and execle() functions can be thought of as arg0, arg1, ..., argn. They together describe a list of one or more pointers to null-terminated strings that represent the argument list available to the executed program.
