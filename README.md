@@ -7,6 +7,7 @@ zTo make a text box showing some commandlines, please use the following format.
 $ add your command here
 ```
 
+# exec() functions
 * List type functions
 
 |          |      Function                                            |  Remark                   |
