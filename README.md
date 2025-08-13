@@ -7,8 +7,8 @@ zTo make a text box showing some commandlines, please use the following format.
 $ add your command here
 ```
 
-| function | function | remark |
-| --------------------| ------ |
+|   | Function            | Remark |
+| ----------------------- | ------ |
 | A | int fucntion()      | test   |
 |   | int fucntion()      | test   |
 |   | int fucntion()      | test   |
