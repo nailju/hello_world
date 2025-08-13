@@ -7,8 +7,8 @@ zTo make a text box showing some commandlines, please use the following format.
 $ add your command here
 ```
 
-| Tables   |      Function      |  Remark |
+|          |      Function      |  Remark |
 |----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+|          | int execl (const char *__path, const char *__arg, ...)   | ... |
+|   List   | int execlp (const char *__file, const char *__arg, ...)  | ... |
+|          | int execle (const char *__path, const char *__arg, ...)  | ... |
