@@ -11,21 +11,22 @@ $ add your command here
 
 
 # exec() functions
-The exec() family of functions (execl(), execlp, execle()) replaces the current process image with a new process image.
-The initial argument for these functions is the name of a file that is to be executed.
-
+The exec() family of functions (i.e., execl(), execlp, execle()) replaces the current process image with a new process image.
+The first argument, by convention, should point to the filename associated with the file being executed.
+The list of arguments must be terminated by a NULL pointer, and, since these are variadic functions, this pointer must be cast (char *) NULL.
+The const char *arg and subsequent ellipses in the execl(), execlp(), and execle() functions can be thought of as arg0, arg1, ..., argn. They together describe a list of one or more pointers to null-terminated strings that represent the argument list available to the executed program.
 
 * List type functions
 
-|      Function                                            |  Remark                   |
+|      Function ( #include <unistd.h> )                    |  Example                  |
 |:---------------------------------------------------------|:--------------------------|
-| int execl (const char *path, const char *arg, ...)       | Execute PATH with all arguments after PATH until a NULL pointer and environment from `environ'. |
-| int execlp (const char *file, const char *arg, ...)      | Execute FILE, searching in the PATH environment variable if it contains no slashes, with all arguments after FILE until a NULL pointer and environment from `environ'. |
+| int execl (const char *path, const char *arg, ...)       | execl("bin/ls", "ls", "-al", NULL); |
+| int execlp (const char *file, const char *arg, ...)      | execl("ls", "ls", "-al", NULL); |
 | int execle (const char *path, const char *arg, ...)      | Execute PATH with all arguments after PATH until a NULL pointer, and the argument after that for environment. |
 
 * Vector type functions
 
-|      Function                                            |  Remark                   |
+|      Function ( #include <unistd.h> )                    |  Remark                   |
 |:---------------------------------------------------------|:--------------------------|
 | int execv (const char *path, char *const argv[])         | ...                       |
 | int execvp (const char *file, char *const argv[])        | ...                       |
