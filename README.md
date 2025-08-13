@@ -7,14 +7,7 @@ zTo make a text box showing some commandlines, please use the following format.
 $ add your command here
 ```
 
-|   | Function            | Remark |
-| ----------------------- | ------ |
-| A | int fucntion()      | test   |
-|   | int fucntion()      | test   |
-|   | int fucntion()      | test   |
-| B | int fucntion()      | test   |
-
-| Tables   |      Are      |  Cool |
+| Tables   |      Function      |  Remark |
 |----------|:-------------:|------:|
 | col 1 is |  left-aligned | $1600 |
 | col 2 is |    centered   |   $12 |
