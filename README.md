@@ -34,12 +34,12 @@ The list of arguments must be terminated by a NULL pointer, and, since these are
 The `const char *arg` and subsequent ellipses in the `execl()`, `execlp()`, and `execle()` functions can be thought of as `arg0`, `arg1`, ..., `argn`. They together describe a list of one or more pointers to null-terminated strings that represent the argument list available to the executed program.
 
 * Examples (List type)
-- `execl("/bin/ls", "ls", "-al", NULL);`
-- `execlp("ls", "ls", "-al", NULL);`
+  - `execl("/bin/ls", "ls", "-al", NULL);`
+  - `execlp("ls", "ls", "-al", NULL);`
 
 * Examples (Vector type)
-- `char *argv_exec[] = {"ls", "-al", NULL};` `execv("/binl/ls", argv_exec);`
-- `char *argv_exec[] = {"ls", "-al", NULL};` `execvp("ls", argv_exec);`
+  - `char *argv_exec[] = {"ls", "-al", NULL};` `execv("/binl/ls", argv_exec);`
+  - `char *argv_exec[] = {"ls", "-al", NULL};` `execvp("ls", argv_exec);`
 
 
 |      Function ( #include <unistd.h> )                                    |  Example                                   |
